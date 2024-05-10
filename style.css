@@ -233,7 +233,7 @@ nav {
   justify-content: center;
   align-items: flex-start;
   row-gap: 10px;
-  min-width: 600px;
+  width: 100vw;
   height: 50vh;
   font-weight: 700;
 }
@@ -666,6 +666,7 @@ textarea {
   border: 1px solid black;
 }
 
+/* //media querry */
 @media screen and (max-width: 480px) {
   .body {
     overflow-x: hidden;
@@ -726,18 +727,25 @@ textarea {
   .featured-wrapper {
     flex-direction: column;
   }
+  .featured-card .description {
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
   .banner {
     width: 100%;
     text-align: center;
     margin: auto;
   }
   .banner-box {
-    width: 100vw;
+    width: 100%;
     text-align: center;
     flex-direction: column;
     margin: auto;
+
     background-size: cover;
   }
+
   .product-details {
     display: flex;
     flex-direction: column;
