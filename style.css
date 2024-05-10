@@ -233,7 +233,7 @@ nav {
   justify-content: center;
   align-items: flex-start;
   row-gap: 10px;
-  width: 100vw;
+  width: 47%;
   height: 50vh;
   font-weight: 700;
 }
@@ -737,12 +737,14 @@ textarea {
     text-align: center;
     margin: auto;
   }
+  .small-banner {
+    flex-direction: column;
+  }
   .banner-box {
     width: 100%;
     text-align: center;
     flex-direction: column;
     margin: auto;
-
     background-size: cover;
   }
 
