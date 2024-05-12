@@ -233,7 +233,7 @@ nav {
   justify-content: center;
   align-items: flex-start;
   row-gap: 10px;
-  width: 47%;
+  width: 49%;
   height: 50vh;
   font-weight: 700;
 }
@@ -287,44 +287,46 @@ nav {
   margin: 20px 40px;
   /* width: 100%; */
   flex-wrap: wrap;
-  padding: 40px;
+  padding: 50px;
   justify-content: space-between;
   align-items: center;
   background-image: url("https://as2.ftcdn.net/v2/jpg/05/17/30/81/1000_F_517308164_xq0aEyQSdee8PICp6XHyZZexm1jClUJB.jpg");
   color: white;
   background-size: cover;
 }
+.newsletter-text {
+  flex-basis: 50%;
+}
 .newsletter-text h3 span {
   color: rgb(77, 63, 17);
 }
 .newsletter-form {
-  flex-basis: 80%;
+  flex-basis: 50%;
   margin: 10px 0px;
 }
 .newsletter-form form {
   display: flex;
-  width: 100%;
 }
 .newsletter-form form input {
-  padding: 4px;
+  padding: 15px;
   width: 100%;
   border-radius: 4px;
   outline: none;
   border: transparent;
 }
 .submit-btn {
-  padding: 5px 15px;
+  padding: 5px 25px;
   border-radius: 5px;
   margin: 0px 2px;
   border: 1px solid rgb(255, 255, 255);
-
   background-color: rgb(9, 143, 91);
   font-size: 16px;
   font-weight: 600;
+  width: 150px;
   color: white;
 }
 .submit-btn:hover {
-  background-color: rgb(9, 143, 91);
+  background-color: rgb(7, 73, 48);
   color: white;
   cursor: pointer;
 }
@@ -642,34 +644,31 @@ textarea {
   width: 100%;
   font-weight: 600;
   font-size: medium;
-  padding: 10px;
+  padding: 5px;
 }
 .bil {
-  width: 50%;
+  width: 52%;
   margin: 10px;
   border: 1px solid black;
   padding: 10px;
 }
 .bill table {
   border-collapse: collapse;
-  width: 100%;
+  width: 30vw;
   margin: 10px 0px;
 }
-.bill table tr {
-  width: 50%;
 
-  border: 1px solid black;
-}
 .bill table td {
-  width: 50%;
-  padding: 5px;
+  width: 100%;
+  padding: 5px 10px;
   border: 1px solid black;
 }
 
 /* //media querry */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    margin: 0px;
   }
 
   .hero {
@@ -739,6 +738,10 @@ textarea {
   }
   .small-banner {
     flex-direction: column;
+    width: 100%;
+    padding: 0%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .banner-box {
     width: 100%;
@@ -840,5 +843,8 @@ textarea {
   }
   .bill {
     width: 100%;
+  }
+  .bill table {
+    width: 90vw;
   }
 }
