@@ -749,6 +749,7 @@ textarea {
     flex-direction: column;
     margin: auto;
     background-size: cover;
+    background-position: center;
   }
 
   .product-details {
