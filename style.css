@@ -849,3 +849,45 @@ textarea {
     width: 90vw;
   }
 }
+
+/* CSS for larger screens */
+@media (min-width: 1200px) {
+  .feature-box {
+    width: 20%;
+  }
+  .featured-card {
+    flex-basis: 30%;
+  }
+  .banner-box,
+  .box {
+    width: 45%;
+  }
+}
+
+/* CSS for medium screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .feature-box {
+    width: 30%;
+  }
+  .featured-card {
+    flex-basis: 45%;
+  }
+  .banner-box,
+  .box {
+    width: 100%;
+  }
+}
+
+/* CSS for small screens */
+@media (max-width: 767px) {
+  .feature-box {
+    width: 100%;
+  }
+  .featured-card {
+    flex-basis: 100%;
+  }
+  .banner-box,
+  .box {
+    width: 100%;
+  }
+}

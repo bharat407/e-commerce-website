@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,25 +13,36 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <nav>
-        <a class="brand-logo" href="index.html"
-          ><img
+        <a class="brand-logo" href="index.html">
+          <img
             class="brand-logo"
             src="home-images/brand logo2.png"
             alt="brand logo"
-        /></a>
-        <div class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="shop.html">Shop</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
-        </div>
+          />
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="shop.html">Shop</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+          <i class="fa fa-bars"></i>
+        </button>
       </nav>
     </header>
+    <script src="scripts.js"></script>
 
     <section class="shop-hero">
       <h1>Explore,Shop and Indulge!</h1>
